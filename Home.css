@@ -1,0 +1,82 @@
+.appheading p{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial;
+    background-color:rgb(173,185,202);
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 900px;
+}
+.all, .all > div{
+    display: inline-block;
+    vertical-align:top
+}
+.menu{
+    width: 5cm;
+    font-family: Arial;
+    font-size: 24px;
+    list-style:none;
+    background-color: rgb(173,185,202);
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.selected{
+    background-color: rgb(132,151,176);
+}
+.menu li a{
+    display:block;
+	width: 5cm;
+	height: .7cm;
+	padding-top: 15px;
+    padding-bottom: 15px;
+	color: black;
+	text-align: center;
+	text-decoration:none;
+}
+.content{
+    width: 600px;
+    height: 1000px;
+    margin-left: auto;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.content::before{
+    content:'';
+    background-image: url("watermark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    opacity: 0.2;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    z-index: -1;
+    margin: auto;
+}
+div.status{
+    font-family: Arial;
+    font-size: 24px;
+    top: 0;
+    text-align: center;
+}
+.content hr{
+    border: 1px solid black;
+    background-color:black;
+    margin-top: 0;
+}
+#exeter{
+    /*margin-top: 0;*/
+    float: right;
+    width: 60%;
+    height: 60%;
+    border: 5px solid black;
+}
+.paragraphs{
+    /*margin-top: 0;*/
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+

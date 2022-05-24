@@ -1,0 +1,109 @@
+.appheading p{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial;
+    background-color:rgb(173,185,202);
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 900px;
+}
+.all, .all > div{
+    display: inline-block;
+    vertical-align:top
+}
+.menu{
+    width: 5cm;
+    font-family: Arial;
+    font-size: 24px;
+    list-style:none;
+    background-color: rgb(173,185,202);
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.selected{
+    background-color: rgb(132,151,176);
+    
+}
+.menu li a{
+    display:block;
+	width: 5cm;
+	height: .7cm;
+	padding-top: 15px;
+    padding-bottom: 15px;
+	color: black;
+	text-align: center;
+	text-decoration:none;
+}
+.content{
+    width: 600px;
+    height: 1000px;
+    margin-left: auto;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.content::before{
+    content:'';
+    background-image: url("watermark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    opacity: 0.2;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    z-index: -1;
+    margin: auto;
+}
+div.subtitle{
+    font-family: Arial;
+    font-size: 24px;
+    top: 0;
+    text-align: center;
+}
+.content hr{
+    border: 1px solid black;
+    background-color:black;
+    margin-top: 0;
+}
+.paragraph{
+    margin-top: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    margin-left: 50px;
+}
+.layout{
+    margin-top: 80px;
+}
+#date, #time{
+    background-color: rgb(0,0,0,0);
+    width: 60%;
+    padding: 8px;
+    margin: 5px 0 5px 0;
+    margin-left: 110px;
+}
+::placeholder,.errormsg {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+#report, #cancel{
+    border-radius: 8px;
+    background-color: white;
+    width: 19%;
+    padding: 5px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    
+}
+#report{
+    margin: 10px 0 100px 0;
+}
+#cancel{
+    margin-left: 368px;
+}
